@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Deviceful Starter – npm + Webpack</title>
+  </head>
+
+  <style>
+    /** An example of how to handle responsiveness **/
+    .laptop,
+    .phone {
+      height: 250px;
+    }
+
+    @media (min-width: 768px) {
+      .laptop,
+      .phone {
+        height: 450px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .laptop,
+      .phone {
+        height: 600px;
+      }
+    }
+
+    /** Demo specific **/
+
+    body,
+    html {
+      margin: 0;
+    }
+
+    .phone {
+      background: #222222;
+      cursor: pointer;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="phone"></div>
+    <div class="laptop"></div>
+
+    <div class="buttons">
+      <button id="close">Close</button>
+      <button id="open">Open</button>
+      <button id="swivel">Swivel</button>
+      <button id="center">Center</button>
+      <button id="scrollDown">Scroll Down</button>
+      <button id="scrollUp">Scroll Up</button>
+    </div>
+
+    <p style="text-align: center;">
+      Consider expanding this starter with Babel and chunk your JS on build 🤙
+    </p>
+  </body>
+</html>
